@@ -876,10 +876,6 @@ a:hover {
   height: 100vh;
   background-image: url("..//..//images//pages//home//homepage.jpg");
   background-size: cover;
-  -webkit-background-attachment: fixed;
-  -moz-background-attachment: fixed;
-  -o-background-attachment: fixed;
-  background-attachment: fixed;
 }
 
 .main-page::before {
