@@ -1,0 +1,1107 @@
+.reservation-introduction {
+  position: relative;
+  height: 60vh;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.reservation-introduction::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.reservation-introduction .reservation-discription {
+  position: absolute;
+  color: #fff;
+  top: 50%;
+  left: 5%;
+  letter-spacing: 5px;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .reservation-introduction .reservation-discription {
+    font-size: 35px;
+    line-height: 1.5;
+  }
+}
+
+.your-reservation .your-res-heaing {
+  font-size: 30px;
+  margin-bottom: 60px;
+  color: #fff;
+  position: relative;
+}
+
+.your-reservation .your-res-heaing::before, .your-reservation .your-res-heaing::after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: #f45c43;
+  width: 140px;
+  height: 3px;
+  left: 50%;
+}
+
+.your-reservation .your-res-heaing::before {
+  top: 45px;
+}
+
+.your-reservation .your-res-heaing::after {
+  top: 52px;
+}
+
+.your-reservation .res-p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #adadad;
+}
+
+.sign, .select, .news-button, .discount-button, .suggestion-button,
+.send {
+  border: none;
+  background-color: #f45c43;
+  position: relative;
+  overflow: hidden;
+  font-weight: 400;
+}
+
+.general-from-style .input-container .label-input, .general-from-style .textarea-container .label-textarea {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform-origin: left;
+  transform-origin: left;
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+  position: absolute;
+  top: 10px;
+  left: 25px;
+  z-index: -1;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.general-from-style .input-container .form-input {
+  width: 100%;
+  padding: 10px;
+  background: transparent;
+  border: 1px solid #fff;
+  margin-bottom: 35px;
+  color: #fff;
+  outline: none;
+}
+
+.general-from-style .textarea-container .form-textarea {
+  height: 200px;
+  width: 100%;
+  background: transparent;
+  border: 1px solid #fff;
+  resize: none;
+  outline: none;
+  color: #fff;
+  padding: 10px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  overflow: hidden;
+}
+
+::-moz-selection {
+  background-color: #f45c43;
+  color: #fff;
+}
+
+::selection {
+  background-color: #f45c43;
+  color: #fff;
+}
+
+::-webkit-scrollbar {
+  background-color: rgba(33, 31, 36, 0.8) !important;
+  width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: #f45c43 !important;
+  height: 20%;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #24252a !important;
+}
+
+.go-up {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  position: fixed;
+  z-index: 300;
+  background-color: #f45c43;
+  color: #fff;
+  right: 15px;
+  bottom: 30px;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+
+.go-up:hover {
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+}
+
+.container-loading {
+  position: fixed;
+  z-index: 99999999 !important;
+  background-color: #24252a;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.container-loading .loading-content {
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  position: relative;
+  left: 50%;
+  top: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+.container-loading .loading-content .loading {
+  -webkit-animation: rotateLoading 5s linear infinite;
+  animation: rotateLoading 5s linear infinite;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border-top: 8px solid #f45c43;
+}
+
+@-webkit-keyframes rotateLoading {
+  form {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotateLoading {
+  form {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.reservation-introduction {
+  position: relative;
+  height: 60vh;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.reservation-introduction::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.reservation-introduction .reservation-discription {
+  position: absolute;
+  color: #fff;
+  top: 50%;
+  left: 5%;
+  letter-spacing: 5px;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .reservation-introduction .reservation-discription {
+    font-size: 35px;
+    line-height: 1.5;
+  }
+}
+
+.your-reservation .your-res-heaing {
+  font-size: 30px;
+  margin-bottom: 60px;
+  color: #fff;
+  position: relative;
+}
+
+.your-reservation .your-res-heaing::before, .your-reservation .your-res-heaing::after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: #f45c43;
+  width: 140px;
+  height: 3px;
+  left: 50%;
+}
+
+.your-reservation .your-res-heaing::before {
+  top: 45px;
+}
+
+.your-reservation .your-res-heaing::after {
+  top: 52px;
+}
+
+.your-reservation .res-p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #adadad;
+}
+
+.sign, .select, .news-button, .discount-button, .suggestion-button,
+.send {
+  border: none;
+  background-color: #f45c43;
+  position: relative;
+  overflow: hidden;
+  font-weight: 400;
+}
+
+.general-from-style .input-container .label-input, .general-from-style .textarea-container .label-textarea {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform-origin: left;
+  transform-origin: left;
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+  position: absolute;
+  top: 10px;
+  left: 25px;
+  z-index: -1;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.general-from-style .input-container .form-input {
+  width: 100%;
+  padding: 10px;
+  background: transparent;
+  border: 1px solid #fff;
+  margin-bottom: 35px;
+  color: #fff;
+  outline: none;
+}
+
+.general-from-style .textarea-container .form-textarea {
+  height: 200px;
+  width: 100%;
+  background: transparent;
+  border: 1px solid #fff;
+  resize: none;
+  outline: none;
+  color: #fff;
+  padding: 10px;
+}
+
+header {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  position: relative;
+  z-index: 7;
+}
+
+header .shadow-scroll {
+  -webkit-box-shadow: 0 0 7px 5px rgba(0, 0, 0, 0.3);
+  -o-box-shadow: 0 0 7px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 7px 5px rgba(0, 0, 0, 0.3);
+}
+
+header .navbar {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  padding: 2rem 1rem;
+  background-color: transparent;
+}
+
+header .navbar .navbar-brand .logo {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+@media (min-width: 320px) and (max-width: 991px) {
+  header .navbar .navbar-nav {
+    background-color: #211f24;
+    padding: 15px 0;
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 992px) {
+  header .navbar .navbar-nav .nav-item:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 991px) {
+  header .navbar .navbar-nav .nav-item {
+    margin: auto;
+  }
+}
+
+header .navbar .navbar-nav .nav-item .nav-link {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  position: relative;
+  color: #fff;
+}
+
+header .navbar .navbar-nav .nav-item .nav-link:hover {
+  color: #f45c43;
+  -webkit-transform: translateX(3px);
+  transform: translateX(3px);
+}
+
+header .navbar .navbar-nav .nav-item .nav-link.active {
+  color: #f45c43;
+}
+
+header .navbar .navbar-toggler {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: #f45c43;
+  border: 1px solid #fff !important;
+}
+
+header .navbar .navbar-toggler:hover {
+  color: #fff;
+  background-color: #f45c43;
+}
+
+.sign {
+  overflow: hidden;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  width: 220px;
+  margin: 25px;
+  border-radius: 20px;
+  padding: 10px 50px;
+  letter-spacing: 2px;
+}
+
+.sign:hover {
+  -webkit-box-shadow: 0px 0px 7px 3px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0px 0px 7px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 7px 3px rgba(0, 0, 0, 0.2);
+  -webkit-transform: scale(0.98);
+  transform: scale(0.98);
+}
+
+.select {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  width: 140px;
+  padding: 8px;
+  margin: 0 auto 20px;
+}
+
+.select:hover {
+  -webkit-box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.3);
+  -o-box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.3);
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
+}
+
+.news-button {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  margin-left: -5px;
+  width: 140px;
+  padding: 10px;
+  border: 1px solid #f45c43 !important;
+}
+
+.news-button:hover {
+  background-color: transparent;
+}
+
+@media (min-width: 320px) and (max-width: 576px) {
+  .news-button {
+    width: 60%;
+  }
+}
+
+.discount-button {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  width: 140px;
+  margin-top: 20px;
+  color: #fff;
+  padding: 10px;
+  border: 1px solid #f45c43 !important;
+}
+
+.discount-button:hover {
+  background-color: transparent;
+}
+
+.suggestion-button,
+.send {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  letter-spacing: 2px;
+  width: 50%;
+  margin: auto;
+  margin-top: 40px;
+  color: #fff;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.suggestion-button:hover,
+.send:hover {
+  -webkit-box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.3);
+  -o-box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.3);
+  -webkit-transform: scale(0.95);
+  transform: scale(0.95);
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .suggestion-button,
+  .send {
+    width: 100%;
+  }
+}
+
+.main-sign .sign-in-button,
+.main-sign .sign-up-button {
+  margin-top: 15px;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .main-sign .sign-in-button,
+  .main-sign .sign-up-button {
+    width: 70%;
+  }
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.main-link {
+  color: #fff;
+  position: relative;
+  z-index: 2;
+}
+
+.main-link:hover {
+  color: #fff;
+}
+
+.footer .footer-links {
+  margin-bottom: 10px;
+}
+
+.footer .footer-links ul li a {
+  color: #adadad;
+  margin-bottom: 10px;
+  width: 100px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.footer .footer-links ul li a:hover {
+  -webkit-transform: skewX(7deg);
+  transform: skewX(7deg);
+  color: #f45c43 !important;
+}
+
+.reservation-introduction {
+  position: relative;
+  height: 60vh;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.reservation-introduction::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.reservation-introduction .reservation-discription {
+  position: absolute;
+  color: #fff;
+  top: 50%;
+  left: 5%;
+  letter-spacing: 5px;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .reservation-introduction .reservation-discription {
+    font-size: 35px;
+    line-height: 1.5;
+  }
+}
+
+.your-reservation .your-res-heaing {
+  font-size: 30px;
+  margin-bottom: 60px;
+  color: #fff;
+  position: relative;
+}
+
+.your-reservation .your-res-heaing::before, .your-reservation .your-res-heaing::after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: #f45c43;
+  width: 140px;
+  height: 3px;
+  left: 50%;
+}
+
+.your-reservation .your-res-heaing::before {
+  top: 45px;
+}
+
+.your-reservation .your-res-heaing::after {
+  top: 52px;
+}
+
+.your-reservation .res-p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #adadad;
+}
+
+.sign, .select, .news-button, .discount-button, .suggestion-button,
+.send {
+  border: none;
+  background-color: #f45c43;
+  position: relative;
+  overflow: hidden;
+  font-weight: 400;
+}
+
+.general-from-style .input-container .label-input, .general-from-style .textarea-container .label-textarea {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform-origin: left;
+  transform-origin: left;
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+  position: absolute;
+  top: 10px;
+  left: 25px;
+  z-index: -1;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.general-from-style .input-container .form-input {
+  width: 100%;
+  padding: 10px;
+  background: transparent;
+  border: 1px solid #fff;
+  margin-bottom: 35px;
+  color: #fff;
+  outline: none;
+}
+
+.general-from-style .textarea-container .form-textarea {
+  height: 200px;
+  width: 100%;
+  background: transparent;
+  border: 1px solid #fff;
+  resize: none;
+  outline: none;
+  color: #fff;
+  padding: 10px;
+}
+
+.about-us .social-media {
+  margin-top: 25px;
+}
+
+.about-us .social-media i {
+  -webkit-transform: rotate(-30deg);
+  transform: rotate(-30deg);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: transparent;
+  color: #fff;
+  font-size: 22px;
+  border: 1px solid #f45c43;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.about-us .social-media i:not(:last-of-type) {
+  margin-right: 30px;
+}
+
+.about-us .social-media i:hover {
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  background-color: #f45c43;
+}
+
+.why-us .card .icon-container {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  position: relative;
+  overflow: hidden;
+  width: 70px;
+  height: 70px;
+  background-color: #211f24;
+  margin: auto;
+  border: 1px solid #f45c43;
+  text-align: center;
+  position: relative;
+  top: -30px;
+  line-height: 70px;
+}
+
+.why-us .card .icon-container i {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: #fff;
+  position: relative;
+  z-index: 2;
+  line-height: 70px;
+  font-size: 40px;
+}
+
+.why-us .card:hover .icon-container {
+  background-color: #f45c43;
+}
+
+.why-us .card:hover .icon-container i {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+.our-pricing i {
+  font-size: 30px;
+}
+
+.suggestion i {
+  border: 1px solid #fff;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+}
+
+/* [-- Notice --] Services Form in the beggining before Home Page Form
+  -- Because This Is The Main Style Of All Forms In The Site
+
+*/
+.general-from-style {
+  margin-top: 50px;
+  position: relative;
+  width: 80%;
+  margin: auto;
+}
+
+@media (min-width: 320px) and (max-width: 991px) {
+  .general-from-style {
+    width: 100%;
+  }
+}
+
+.general-from-style .input-container {
+  position: relative;
+}
+
+.general-from-style .input-container .label-input {
+  -webkit-animation: mainrotation 0.5s linear forwards;
+  animation: mainrotation 0.5s linear forwards;
+}
+
+.general-from-style .input-container .label-input.animation-label {
+  -webkit-animation: rotation 0.5s linear forwards;
+  animation: rotation 0.5s linear forwards;
+}
+
+.general-from-style .input-container .form-input {
+  -webkit-animation: mainrotation 0.5s linear forwards;
+  animation: mainrotation 0.5s linear forwards;
+}
+
+.general-from-style .input-container .form-input.animation-label {
+  -webkit-animation: rotation 0.5s linear forwards;
+  animation: rotation 0.5s linear forwards;
+}
+
+.general-from-style .textarea-container {
+  position: relative;
+}
+
+.general-from-style .textarea-container .label-textarea {
+  -webkit-animation: mainrotation 0.5s linear forwards;
+  animation: mainrotation 0.5s linear forwards;
+}
+
+.general-from-style .textarea-container .label-textarea.animation-label {
+  -webkit-animation: rotation 0.5s linear forwards;
+  animation: rotation 0.5s linear forwards;
+}
+
+@-webkit-keyframes rotation {
+  0% {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+  100% {
+    -webkit-transform: rotateY(90deg);
+    transform: rotateY(90deg);
+  }
+}
+
+@keyframes rotation {
+  0% {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+  100% {
+    -webkit-transform: rotateY(90deg);
+    transform: rotateY(90deg);
+  }
+}
+
+@-webkit-keyframes mainrotation {
+  0% {
+    -webkit-transform: rotateY(90deg);
+    transform: rotateY(90deg);
+  }
+  100% {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+}
+
+@keyframes mainrotation {
+  0% {
+    -webkit-transform: rotateY(90deg);
+    transform: rotateY(90deg);
+  }
+  100% {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+}
+
+.homepage-form .label-input {
+  top: 12px !important;
+  z-index: 1 !important;
+}
+
+.homepage-form .form-input {
+  position: relative;
+  z-index: 2;
+}
+
+.homepage-form .textarea-container {
+  margin-top: 25px;
+}
+
+.homepage-form .textarea-container .label-textarea {
+  top: 17px !important;
+  z-index: 1 !important;
+}
+
+.homepage-form .textarea-container .form-textarea {
+  position: relative !important;
+  z-index: 2 !important;
+  padding-top: 15px;
+}
+
+.homepage-form .textarea-container .count-letters {
+  background-color: #f45c43;
+  color: #fff;
+  position: absolute;
+  z-index: 3;
+  top: -17px;
+  left: 47%;
+  width: 34px;
+  height: 34px;
+  line-height: 34px;
+  font-size: 14px;
+}
+
+.newsletter-form {
+  width: 320px !important;
+}
+
+@media (min-width: 320px) and (max-width: 576px) {
+  .newsletter-form {
+    margin: auto !important;
+    width: 100% !important;
+  }
+}
+
+.newsletter-form .input-container .label-input {
+  z-index: 1 !important;
+  left: 15px !important;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.newsletter-form .input-container .form-input {
+  border: 1px solid #f45c43 !important;
+  position: relative !important;
+  z-index: 2 !important;
+}
+
+.reservation-form {
+  width: 100%;
+}
+
+.reservation-form .label-input {
+  z-index: 0 !important;
+}
+
+.reservation-form .label-textarea {
+  z-index: 0 !important;
+}
+
+.reservation-form .form-input,
+.reservation-form .form-textarea {
+  border: 1px solid rgba(244, 92, 67, 0.4) !important;
+}
+
+.nights-gustes-form {
+  width: 100% !important;
+}
+
+.nights-gustes-form .input-container {
+  position: relative;
+}
+
+@media (min-width: 320px) and (max-width: 576px) {
+  .nights-gustes-form .input-container {
+    margin: auto !important;
+    width: 220px !important;
+  }
+}
+
+.nights-gustes-form .input-container .label-input {
+  left: 0 !important;
+  top: 5px !important;
+  z-index: unset !important;
+  top: 5px !important;
+  text-align: center !important;
+  width: 100% !important;
+}
+
+.nights-gustes-form .input-container .form-input {
+  border: 1px solid rgba(244, 92, 67, 0.4) !important;
+  padding: 5px !important;
+}
+
+@media (min-width: 320px) and (max-width: 576px) {
+  .nights-gustes-form .input-container .form-input {
+    margin-bottom: 0 !important;
+  }
+}
+
+.sign-in-form .input-container,
+.sign-up-form .input-container {
+  width: 90% !important;
+  margin: auto !important;
+}
+
+.sign-in-form .input-container .label-input,
+.sign-up-form .input-container .label-input {
+  left: 15px !important;
+}
+
+.sign-in-form .input-container .form-input,
+.sign-up-form .input-container .form-input {
+  border: none !important;
+  border-bottom: 1px solid #f45c43 !important;
+}
+
+.reservation-introduction {
+  background-image: url("..//..//images//pages//reservation/reservation.jpg");
+}
+
+.your-reservation {
+  overflow: hidden;
+  background-color: #24252a;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.your-reservation .person-reservation {
+  margin-top: 40px;
+}
+
+.your-reservation .person-reservation span {
+  color: #fff;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.your-reservation .person-reservation .input {
+  padding: 5px;
+  outline: none;
+  border: 1px solid rgba(244, 92, 67, 0.4);
+  background: none;
+  color: #adadad;
+  cursor: pointer;
+}
+
+.your-reservation .person-reservation .check-in-out input {
+  width: 220px;
+}
+
+.your-reservation .more-options {
+  margin-top: 60px;
+  padding-top: 40px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer {
+  position: relative;
+  overflow: hidden;
+  background-color: #211f24;
+  padding-top: 80px;
+  color: #adadad;
+}
+
+.footer .footer-heading {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.footer .footer-heading::first-letter {
+  color: #f45c43;
+  font-size: 29px;
+}
+
+.footer .address {
+  margin-bottom: 10px;
+}
+
+.footer .address ul li {
+  margin-bottom: 15px;
+}
+
+.footer .address ul li:hover i {
+  -webkit-transform: translateY(-3px);
+  transform: translateY(-3px);
+  color: #f45c43;
+}
+
+.footer .address ul li i {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-size: 18px;
+  margin-right: 3px;
+}
+
+.footer .footer-social-media .footer-icon {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  margin: auto;
+  border: 1px solid;
+  line-height: 30px;
+  text-align: center;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  margin-bottom: 12px;
+}
+
+.footer .footer-social-media .footer-icon:hover {
+  -webkit-transform: none;
+  transform: none;
+  background-color: #f45c43;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .footer .footer-social-media .footer-icon {
+    margin-right: 7px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .footer .footer-social-media .footer-icon.first-icon {
+    margin-left: 15px;
+  }
+}
+
+.footer .right-reserved {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.footer .right-reserved i {
+  color: red;
+}
+
+.footer .right-reserved a {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: #adadad;
+}
+
+.footer .right-reserved a:hover {
+  color: #f45c43;
+}
+/*# sourceMappingURL=reservation.css.map */
